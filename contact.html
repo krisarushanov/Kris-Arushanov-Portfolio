@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src= "script.js"></script>
     <title>Kris Arushanov Portfolio</title>
     <style>
         /*body {background-color:}
@@ -34,28 +36,33 @@
         <h1 class="display-4" style="justify-content: center;">Leave a messege at the tone.</h1>
         <p class="lead">Contact me here</p>
         <hr class="my-4">
-        
-        
       </div>
    
-      <div class="container" >
+      <div class="container" style="justify-content: center;" >
         <div class="col-md-8 mx-auto" >
-           
-        <form>
-            <div class="form-group" style="flex-direction: column;">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-           
-           
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1"></label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Leave a messege</textarea>
-            </div>
 
-            <button type="submit">Send</button>
-            <div id="status">Sent</div>
-          </form>
+          <form id="contactform" action="https://formspree.io/f/xdoyooyv" method="POST">
+           
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
+                </div>
+              </div>
+              <textarea  style= "margin-top: 5%;" class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button class="btn btn-secondary pull-right" type="submit">Send</button>
+                </div>
+             
+            </div>
+            <input type="hidden" name="_next" value="./index.html" />
+            <input type="text" name="_gotcha" style="display:none" />   
+            </form>
+
+          
         </div>
     </div>  
     <div id="footer"></div>
