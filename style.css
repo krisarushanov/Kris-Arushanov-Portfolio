@@ -52,11 +52,14 @@ h2 {
 
 #projectOne {
   padding-bottom: 450px;
-  background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
-  
-  
+}
+
+#projectTwo {
+  padding-bottom: 500px;
+}
+
+#projectThree {
+  padding-bottom: 470px;
 }
 
 .card-img-top {
@@ -65,4 +68,5 @@ h2 {
   background-size: cover;
   max-height: 270px;
 }
+
 
