@@ -1,36 +1,78 @@
-
+body {
+  background-color: black;
+}
 .card {
   max-height: 300px;
   font-size: 10 em;
   border: none;
- 
-
 }
-
 
 .navbar {
-  background-color: gainsboro;
+  background-color:white;
+  font-weight: 700;
+  color: white;
 }
 
-.navbar-band {
-  background-color:transparent;
+.navbar-brand {
+  background-color:white;
+  margin-left: 6%;
+}
+
+.navbar-collapse {
+  color: white !important;
+}
+
+.navbar-toggler {
+  color: white !important;
+}
+
+.navbar-toggler-icon {
+  color: white !important;
+  background-color: white;
+}
+
+a {
+  color: white !important;
+}
+
+i {
+  padding: 3%;
+  font-size: 2vw;
+  color: white;
 }
 
 .jumbotron {
-  background-color:gainsboro ;
+  background-color:black ;
+}
+
+#projectExOne {
+  background-image: url(./images/project1.PNG);
+  background-size: cover;
+ 
+  object-fit: cover;
+  
+  width: 100vw;
+  height: 75vh;
+
 }
 
 .footer {
-  background-color: gainsboro;
- 
+  background-color:black;
+ color: white;
   text-align: center;
 }
-
 
 #bio {
   font-family: Arial, Helvetica, sans-serif;
  line-height: 1.75;
  font-weight: 200;
+}
+
+h1 {
+  font-size: 6.94444vw;
+  line-height: 1;
+  margin-top: .83333vw;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -69,4 +111,118 @@ h2 {
   max-height: 270px;
 }
 
+p {
+  color:pink;
+  font-size: 3vh;
+  line-height: 3vh;
+}
 
+.fas:hover  {
+  color: rgb(140, 0, 255);
+}
+
+.fa:hover  {
+  color: rgb(140, 0, 255);
+}
+
+.fab:hover  {
+  color: rgb(140, 0, 255);
+}
+
+.drawer {
+  display: none;
+  color: #000;
+}
+
+.drawer__header {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.drawer__close {
+  padding-right: 3px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='15px' height='16px' viewBox='0 0 15 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='2.-Menu' transform='translate(-15.000000, -13.000000)' stroke='%23000000'%3E%3Cg id='Group' transform='translate(15.000000, 13.521000)'%3E%3Cpath d='M0,0.479000129 L15,14.2971819' id='Path-3'%3E%3C/path%3E%3Cpath d='M0,14.7761821 L15,-1.24344979e-14' id='Path-3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  width: 15px;
+  height: 15px;
+}
+
+.drawer__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 900px;
+  z-index: 9999;
+  overflow: auto;
+  transition: transform 0.3s;
+  will-change: transform;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  -webkit-transform: translateX(103%);
+  transform: translateX(103%); /* extra 3% because of box-shadow */
+  -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
+  box-shadow: 0 2px 6px #777;
+}
+.drawer__title {
+ 
+  padding: 4vw;
+  font-size: 3.125vw;
+  line-height: 3.125vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+
+}
+.drawer__content {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  flex-grow: 1;
+  padding-left: 4vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 3vw;
+  line-height: 3vw;
+}
+
+.drawer.is-active {
+  display: block;
+}
+
+.drawer.is-visible .drawer__wrapper {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.drawer.is-visible .drawer__overlay {
+  opacity: 0.5;
+}
+
+.drawer__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  opacity: 0;
+  transition: opacity 0.3s;
+  will-change: opacity;
+  background-color: #000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

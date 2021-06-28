@@ -7,89 +7,351 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/922e13262d.js" crossorigin="anonymous"></script>
     <title>Kris Arushanov Portfolio</title>
     
   </head>
   <body>  
-    <nav class="navbar sticky-top navbar-light ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">About Me</a>
-              <a class="nav-link" href="contact.html">Contact</a>
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-              <a class="nav-link" href="./images/Kristena Arushanov Resume Web Developer.pdf" method="POST" target="_blank">Resume</a>       
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top">
+      <div class="container-fluid">
+     
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="color: white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a href="index.html" class="nav-item nav-link"> <i class="fas fa-home"></i></a>
+            <a href="#contact" class="nav-item nav-link"><i class="fas fa-paper-plane" ></i></a>
+            <a href="#projects" class="nav-item nav-link"><i class="fas fa-code" ></i></a>
+            <a href="https://github.com/krisarushanov" class="nav-item nav-link"><i class= "fab fa-github-square" target=“_blank” ></i></a>
+            <a href="https://www.linkedin.com/in/kris-arushanov-39623a115/"class="nav-item nav-link"  > <i class="fa fa-linkedin-square" target=“_blank” ></i> </a>
+            <a href="#" data-drawer-trigger aria-controls="drawer-name" aria-expanded="false" class="nav-item nav-link"><i class="fas fa-smile" style="color: yellow;"></i> </a>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
       
-    <div class="jumbotron sticky-top text-center" style="justify-content: center;">
+    <div class="jumbotron  text-center" style="justify-content: center;">
       <div class="container-fluid">
-      <h1 class="display-4" style="justify-content: center;">Hello, I'm Kris.</h1>
-      <p class="lead"> Web Developer </p>
-      <p class="lead">kris.arushanov@gmail.com (206) 466-9040 </p>
-      <a href="https://github.com/krisarushanov" class= "fab fa-github-square" target=“_blank” style="font-size:24px; padding-right: 1%; color: rgb(59, 67, 75);"> </a>
-      <a href="https://www.linkedin.com/in/kris-arushanov-39623a115/" class="fa fa-linkedin-square" target=“_blank” style="font-size:24px; color: rgb(59, 67, 75);"> </a>
-     
+      <h1  style="justify-content: center; color: white; padding-bottom: 2px; ">KRIS ARUSHANOV</h1>
+      <h1  style="justify-content: center;  color:rgb(255, 251, 251); opacity: .7; line-height: .1;  " > WEB </h1> 
+      <h1  style="justify-content: center;  color:rgb(255, 251, 251); opacity: .7; line-height: 1; padding-bottom: 4%;" > DEVELOPMENT & DESIGN</h1> 
       <hr class="my-4">
       
       
     </div> 
   </div>
 
-    <div class="container-fluid">
-         <div class="container" >
-            
-             <div class="col-md-8 mx-auto" >
-             <div id="bio">
-            <card>
-             <img src="./images/professionalprofilepic.jpg" class="responsive" style ="float: left; padding-right: 20px; margin-bottom: 3%;" width= "350px" height="350px"  alt="Kris standing infront of pink flowers"/>
-             
-            <div class="card" id="bioheadline" style="overflow: hidden;" text-align="center">
-              <div class="card-body">
-                WELCOME TO THE WORLD OF KRIS
+    <div class="container-fluid" >
+         <div class="container"  id="projectExOne" >
+         
+
+           </div>
+            </div>
+          </div>    
+         
+         <section class="drawer" id="drawer-name" data-drawer-target>
+          <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+          <div class="drawer__wrapper">
+            <div class="drawer__header">
+              <div class="drawer__title">
+                ABOUT ME
               </div>
-              </div>
-            </card>
-             
-             <p text-align="center">    
+              <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+            </div>
+            <div class="drawer__content">
+              WELCOME TO THE WORLD OF KRIS
+
+              <p text-align="center">    
                 Leave your shoes at the door and keep your mind open. I'm a full stack web developer based on Maui. I recently graduated the University of Washington Coding
                 bootcamp where I spent the last 6 months exploring the world of full stack.  My journey in tech has brought to the surface my passion for front-end development. I am currently
                 looking for opportunities to build my portfolio. 
              </p>
-            
-            <div class="card" id="bioheadline">
-              <div class="card-body">
-                I'M A FRONT-END DEVELOPER, CAFFEINE ENTHUSIAST AND SEO STUDENT
-              </div>
+              
             </div>
-             
-             <p> My passsion lies in designing and developing effective web pages that offer a seamless while memorable
-             experience to the user. Your customer has made the journey to your site. Lets make the destination epic (kind of like Maui).</p>
-            
-             <div class="card" id="bioheadline">
-              <div class="card-body">
-                NO FRILLS JUST THRILLS
-              </div>
-            </div>
+            <div class="drawer__content">
+              I'M A FRONT-END DEVELOPER, CAFFEINE ENTHUSIAST AND SEO STUDENT
 
-             <p>
-             Lets connect! I'm always working on a fun project on Github or building my network on LinkedIn.
-              You can also find me getting washed up trying to surf. Do something awesome and don't forget the best surfer is the one having the most fun.  
-            </p>
-
-             </div>
+              <p> My passsion lies in designing and developing effective web pages that offer a seamless while memorable
+                experience to the user. Your customer has made the journey to your site. Lets make the destination epic (kind of like Maui).</p>
             </div>
-         </div> 
+          
+            <div class="drawer__content">
+              NO FRILLS JUST THRILLS
+
+              <p>
+                Lets connect! I'm always working on a fun project on Github or building my network on LinkedIn.
+                 You can also find me getting washed up trying to surf. Do something awesome and don't forget the best surfer is the one having the most fun.  
+               </p>
+   
+
+            </div>
+          
+          </div>
+        </section>
+
+  <script>
+
+
+var drawer = function () {
+
+/**
+* Element.closest() polyfill
+* https://developer.mozilla.org/en-US/docs/Web/API/Element/closest#Polyfill
+*/
+if (!Element.prototype.closest) {
+  if (!Element.prototype.matches) {
+    Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+  }
+  Element.prototype.closest = function (s) {
+    var el = this;
+    var ancestor = this;
+    if (!document.documentElement.contains(el)) return null;
+    do {
+      if (ancestor.matches(s)) return ancestor;
+      ancestor = ancestor.parentElement;
+    } while (ancestor !== null);
+    return null;
+  };
+}
+
+
+//
+// Settings
+//
+var settings = {
+  speedOpen: 50,
+  speedClose: 350,
+  activeClass: 'is-active',
+  visibleClass: 'is-visible',
+  selectorTarget: '[data-drawer-target]',
+  selectorTrigger: '[data-drawer-trigger]',
+  selectorClose: '[data-drawer-close]',
+
+};
+
+
+//
+// Methods
+//
+
+// Toggle accessibility
+var toggleccessibility = function (event) {
+  if (event.getAttribute('aria-expanded') === 'true') {
+    event.setAttribute('aria-expanded', false);
+  } else {
+    event.setAttribute('aria-expanded', true);
+  }
+};
+
+// Open Drawer
+var openDrawer = function (trigger) {
+
+  // Find target
+  var target = document.getElementById(trigger.getAttribute('aria-controls'));
+
+  // Make it active
+  target.classList.add(settings.activeClass);
+
+  // Make body overflow hidden so it's not scrollable
+  document.documentElement.style.overflow = 'hidden';
+
+  // Toggle accessibility
+  toggleccessibility(trigger);
+
+  // Make it visible
+  setTimeout(function () {
+    target.classList.add(settings.visibleClass);
+  }, settings.speedOpen);
+
+};
+
+// Close Drawer
+var closeDrawer = function (event) {
+
+  // Find target
+  var closestParent = event.closest(settings.selectorTarget),
+    childrenTrigger = document.querySelector('[aria-controls="' + closestParent.id + '"');
+
+  // Make it not visible
+  closestParent.classList.remove(settings.visibleClass);
+
+  // Remove body overflow hidden
+  document.documentElement.style.overflow = '';
+
+  // Toggle accessibility
+  toggleccessibility(childrenTrigger);
+
+  // Make it not active
+  setTimeout(function () {
+    closestParent.classList.remove(settings.activeClass);
+  }, settings.speedClose);
+
+};
+
+// Click Handler
+var clickHandler = function (event) {
+
+  // Find elements
+  var toggle = event.target,
+    open = toggle.closest(settings.selectorTrigger),
+    close = toggle.closest(settings.selectorClose);
+
+  // Open drawer when the open button is clicked
+  if (open) {
+    openDrawer(open);
+  }
+
+  // Close drawer when the close button (or overlay area) is clicked
+  if (close) {
+    closeDrawer(close);
+  }
+
+  // Prevent default link behavior
+  if (open || close) {
+    event.preventDefault();
+  }
+
+};
+
+// Keydown Handler, handle Escape button
+var keydownHandler = function (event) {
+
+  if (event.key === 'Escape' || event.keyCode === 27) {
+
+    // Find all possible drawers
+    var drawers = document.querySelectorAll(settings.selectorTarget),
+      i;
+
+    // Find active drawers and close them when escape is clicked
+    for (i = 0; i < drawers.length; ++i) {
+      if (drawers[i].classList.contains(settings.activeClass)) {
+        closeDrawer(drawers[i]);
+      }
+    }
+
+  }
+
+};
+
+
+//
+// Inits & Event Listeners
+//
+document.addEventListener('click', clickHandler, false);
+document.addEventListener('keydown', keydownHandler, false);
+
+
+};
+
+drawer();
+
+  </script>      
+        
+  <div class= "container" >  
+    
+    <div class="px-4 py-5 my-5 text-center"  id="projects">
+      <i class="fas fa-code" ></i>
+      <h1 style="justify-content: center; color: white; ">Projects</h1>
+      <div class="col-lg-6 mx-auto">
+       
+        </div>
+      </div>
     </div>
+    <div class="col-md-8 mx-auto" >
+        
+      <div class="container" id= "galleryContainer"   >
+
+        <div class="row" id="gallery" >
+          <div class="col-12 col-sm-6 col-lg-6">
+                <img class="w-100" src="./images/project1.PNG">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6">
+            <img class="w-100" src="./images/project2.PNG">
+          </div>
+          
+        </div>
+    
+        <div class="row" id="gallery" >
+          <div class="col-12 col-sm-6 col-lg-6">
+            <img class="w-100" src="./images/project3.PNG">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6">
+            <img class="w-100" src="./images/project4.PNG">
+          </div>
+          
+        </div>
+
+        <div class="row" id="gallery" >
+          <div class="col-12 col-sm-6 col-lg-6">
+            <img class="w-100" src="./images/howdareyou.PNG">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6">
+            <img class="w-100 "src="./images/easyliving0202.png">
+          </div>
+          
+        </div>  
+
+        <div class="row" id="gallery" >
+          <div class="col-12 col-sm-6 col-lg-6">
+            <img class="w-100" src="./images/yourwebdevsnip.PNG">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6">
+            <img class="w-100" src="./images/ouncecountshome.PNG">
+          </div>
+          
+        </div>
+
+        <div class= "container" id="contact"  >  
+    
+          <div class="px-4 py-5 my-5 text-center">
+            <i class="fas fa-paper-plane" ></i>
+            <h1  style="justify-content: center; color: white; ">Contact</h1>
+            <p class="lead"> LEAVE A MESSAGE AT THE TONE </p>
+            <p class="lead"> 
+              kris.arushanov@gmail.com (206) 466-9040 </p>
+            <div class="col-lg-6 mx-auto">
+             
+              </div>
+            </div>
+          </div>
+       
+  
+            <form id="contactform" action="https://formspree.io/f/xdoyooyv" method="POST" target="_blank">
+             
+                <div class="row">
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                  </div>
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
+                  </div>
+                </div>
+                <textarea  style= "margin-top: 5%;" class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
+                <div class="row">
+                  <div class="col-sm-12 form-group">
+                    <button class="btn btn-secondary pull-right" type="submit">Send</button>
+                  </div>
+               
+              </div>
+              <input type="hidden" name="_next" value="./index.html" />
+              <input type="text" name="_gotcha" style="display:none" />   
+              </form>
+  
+            
+   
+
+    
+    </div>
+
 
     <footer class="footer mt-auto py-3 ">
       <div class="container-fluid">
@@ -99,7 +361,7 @@
      
       </div>
     </footer>
-   
+    <script type="text/javascript" src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
   </body>
