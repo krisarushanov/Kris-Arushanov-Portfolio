@@ -43,20 +43,24 @@ i {
 
 .jumbotron {
   background-color:black ;
+  padding-top: 3%;
 }
 
 #projectExOne {
-  background-image: url(./images/project1.PNG);
+  background-image: url(./images/laptop.jpg);
   background-size: cover;
   object-fit: cover;
   width: 100vw;
   height: 75vh;
+ 
 }
 
 @media screen and (max-width: 600px) {
   #projectExOne {
     background-size: contain;
+    background-position: center center;
     background-repeat: no-repeat;
+    height: 20vh;
   }
 }
 
@@ -115,6 +119,9 @@ h2 {
   max-height: 270px;
 }
 
+img { padding: 1%;
+}
+
 p {
   color:pink;
   font-size: 3vh;
@@ -123,6 +130,7 @@ p {
 
 .fas:hover  {
   color: rgb(140, 0, 255);
+  
 }
 
 .fa:hover  {
@@ -132,6 +140,8 @@ p {
 .fab:hover  {
   color: rgb(140, 0, 255);
 }
+
+
 
 .drawer {
   display: none;
