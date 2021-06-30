@@ -11,6 +11,7 @@ body {
   background-color:white;
   font-weight: 700;
   color: white;
+ 
 }
 
 .navbar-brand {
@@ -19,7 +20,7 @@ body {
 }
 
 .navbar-collapse {
-  color: white !important;
+  color: rgb(93, 230, 235);
 }
 
 .navbar-toggler {
@@ -32,7 +33,7 @@ body {
 }
 
 a {
-  color: white !important;
+  color:rgb(93, 230, 235);
 }
 
 i {
@@ -58,7 +59,7 @@ i {
 @media screen and (max-width: 600px) {
   #projectExOne {
     background-size: contain;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     height: 20vh;
   }
@@ -77,17 +78,21 @@ i {
 }
 
 h1 {
-  font-size: 6.94444vw;
+  font-size: 5vw;
   line-height: 1;
   margin-top: .83333vw;
   text-transform: uppercase;
+  
 }
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   letter-spacing: -1px;
   line-height: 1;
+  background: -webkit-linear-gradient(rgb(125, 233, 174), rgb(3, 148, 233));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #bioheadline {
@@ -122,12 +127,16 @@ h2 {
 img { padding: 1%;
 }
 
-p {
-  color:pink;
+.lead {
+  color:rgb(93, 230, 235);
   font-size: 3vh;
   line-height: 3vh;
 }
-
+ p {
+   color: #000;
+   font-size: 3vh;
+   line-height: 3vh;
+ }
 .fas:hover  {
   color: rgb(140, 0, 255);
   
@@ -180,7 +189,7 @@ p {
   overflow: auto;
   transition: transform 0.3s;
   will-change: transform;
-  background-color: #fff;
+  background-color:rgb(255, 250, 250);
   display: flex;
   flex-direction: column;
   -webkit-transform: translateX(103%);
@@ -208,6 +217,7 @@ p {
   text-transform: uppercase;
   font-size: 3vw;
   line-height: 3vw;
+ 
 }
 
 .drawer.is-active {
@@ -241,3 +251,20 @@ p {
   user-select: none;
 }
 
+
+ .form-control {
+  background-color:rgb(2, 18, 19);
+   color:white;
+   border: 5px solid transparent;
+   padding: .5rem;
+   border-radius: 5px;
+   border-image-source: linear-gradient(to right, rgb(93, 226, 171) 0%, rgb(83, 83, 240) 100%); 
+   border-image-slice: 5;
+  }
+
+  .btn-custom {
+    background-color:rgb(93, 230, 235) ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
