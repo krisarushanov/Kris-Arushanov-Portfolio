@@ -63,6 +63,10 @@ i {
     background-repeat: no-repeat;
     height: 20vh;
   }
+  .aboutPageHeader {
+    font-size: 3vh;
+    line-height: 4vh;
+  }
 }
 
 .footer {
@@ -82,6 +86,7 @@ h1 {
   line-height: 1;
   margin-top: .83333vw;
   text-transform: uppercase;
+  text-shadow: 0 0 3px #09ff00;
   
 }
 
@@ -93,6 +98,8 @@ h2 {
   background: -webkit-linear-gradient(rgb(125, 233, 174), rgb(3, 148, 233));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
+
 }
 
 #bioheadline {
@@ -133,9 +140,9 @@ img { padding: 1%;
   line-height: 3vh;
 }
  p {
-   color: #000;
+   color:white;
    font-size: 3vh;
-   line-height: 3vh;
+   line-height: 4vh;
  }
 .fas:hover  {
   color: rgb(140, 0, 255);
@@ -166,15 +173,18 @@ img { padding: 1%;
 }
 
 .drawer__close {
-  padding-right: 3px;
+  
   margin: 0;
-  padding: 0;
+  padding-left: 5%;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  background-image: url("data:image/svg+xml,%0A%3Csvg width='15px' height='16px' viewBox='0 0 15 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='2.-Menu' transform='translate(-15.000000, -13.000000)' stroke='%23000000'%3E%3Cg id='Group' transform='translate(15.000000, 13.521000)'%3E%3Cpath d='M0,0.479000129 L15,14.2971819' id='Path-3'%3E%3C/path%3E%3Cpath d='M0,14.7761821 L15,-1.24344979e-14' id='Path-3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  width: 15px;
-  height: 15px;
+  background-image: url("./images/cancel.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 25px;
+  height: 25px;
 }
 
 .drawer__wrapper {
@@ -189,16 +199,27 @@ img { padding: 1%;
   overflow: auto;
   transition: transform 0.3s;
   will-change: transform;
-  background-color:rgb(255, 250, 250);
-  display: flex;
-  flex-direction: column;
-  -webkit-transform: translateX(103%);
-  transform: translateX(103%); /* extra 3% because of box-shadow */
-  -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
-  box-shadow: 0 2px 6px #777;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  
 }
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 .drawer__title {
- 
+ color: white;
   padding: 4vw;
   font-size: 3.125vw;
   line-height: 3.125vw;
@@ -217,6 +238,7 @@ img { padding: 1%;
   text-transform: uppercase;
   font-size: 3vw;
   line-height: 3vw;
+  color: white;
  
 }
 
@@ -268,3 +290,9 @@ img { padding: 1%;
     text-transform: uppercase;
     font-weight: 700;
   }
+  .AboutMe {
+    padding-bottom: 3%;
+  }
+
+  
+

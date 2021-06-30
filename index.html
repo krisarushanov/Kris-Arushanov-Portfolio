@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,55 +67,59 @@
           <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
           <div class="drawer__wrapper">
             <div class="drawer__header">
-              <div class="drawer__title">
-                ABOUT ME
+              
+              <div class="drawer__title" >
+                <h1  style="text-shadow: none;"  >ABOUT ME</h1>
               </div>
-              <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+          
+              <button class="drawer__close"  data-drawer-close aria-label="Close Drawer"></button>
             </div>
-            <div class="drawer__content">
-              WELCOME TO THE WORLD OF KRIS
+            <div class="drawer__content" >
+              <div class="AboutMe">
+              <div class="aboutPageHeader">✨ WELCOME TO THE WORLD OF KRIS</div>
 
               <p text-align="center">    
                 Leave your shoes at the door and keep your mind open. I am results-driven web developer who transforms how users interact with data.
                  I recently earned a certificate in Full Stack Web Development from the University of Washington Coding Boot Camp. I enjoy making the most 
-                 out of users experiences by experimenting, staying curious and innovative thinking.
-
+                 out of users experiences by <span style="color: rgb(200, 255, 0)" > experimenting,</span><span style="color: rgb(200, 255, 0);" > staying curious</span> and <span style="color: rgb(200, 255, 0);">innovative thinking</span>
+                
              </p>
-              
+        
+            </div>
             
-            <div class="AboutMe">
-              I'M A FRONT-END DEVELOPER, CAFFEINE ENTHUSIAST AND SEO STUDENT
+            <div class="AboutMe" class=aboutPageHeader>
+              ☕ I'M A FRONT-END DEVELOPER, CAFFEINE ENTHUSIAST AND SEO STUDENT
 
-              <p> My passsion lies in designing and developing effective web pages that offer a seamless while memorable
+              <p > My passsion lies in designing and developing effective web pages that offer a seamless while memorable
                 experience to the user. Your customer has made the journey to your site. Lets make the destination epic (kind of like Maui).</p>
             </div>
           
-            <div class="AboutM">
-              NO FRILLS JUST THRILLS
+            <div class="AboutMe" class="aboutPageHeader">
+              🌊 NO FRILLS JUST THRILLS
 
               <p>
-                Lets connect! I'm always working on a fun project on Github or building my network on LinkedIn.
+                 Lets connect! I'm always working on a fun project on Github or building my network on LinkedIn.
                  You can also find me getting washed up trying to surf. Do something awesome and don't forget the best surfer is the one having the most fun.  
                </p>
 
             </div>
-          <div id="aboutMe">
-            Strengths
+            <div class="AboutMe" class="aboutPageHeader">
+              💡 Technical Skills
+              <p>
+                Languages: HTML5, CSS, Javascript, React, SQL, NoSQL, Liquid
+                Applications: Github, MongoDB, MySQL, Wordpress, Shopify
+                Tools: Google Cloud Platform, Node, Express, Bootstrap, jQuery, APIs, AJAX, Chrome developer tools
+                Concepts: SEO, Google Analytics
+              </p>
+  
+            </div>  
+
+          <div class="AboutMe" class="aboutPageHeader">
+            🤓 Strengths
             <p>
-              Communication, teamwork, experimentation and building projects from ideation to execution. Passion for all things web with a curiosity to learn and willingness to do things the right way.
+              Communication, teamwork, experimentation and building projects from ideation to execution. <span style="color: greenyellow;"> Passion for all things web with a curiosity to learn</span> and <span style="color: greenyellow;"> a willingness to do things the right way.</span> 
 
             </p>
-          </div>
-
-          <div id="aboutMe">
-            Technical Skills
-            <p>
-              Languages: HTML5, CSS, Javascript, React, SQL, NoSQL, Liquid
-              Applications: Github, MongoDB, MySQL, Wordpress, Shopify
-              Tools: Google Cloud Platform, Node, Express, Bootstrap, jQuery, APIs, AJAX, Chrome developer tools
-              Concepts: SEO, Google Analytics
-            </p>
-
           </div>
           </div>  
           
@@ -291,40 +299,40 @@ drawer();
 
         <div class="row" id="gallery" >
           <div class="col-12 col-sm-6 col-lg-6">
-                <img class="w-100" src="./images/project1.PNG">
+                <img class="w-100" src="./images/project1.PNG"data-aos="fade-down-right" data-aos-duration="500"  >
           </div>
           <div class="col-12 col-sm-6 col-lg-6">
-            <img class="w-100" src="./images/project2.PNG">
+            <img class="w-100" src="./images/project2.PNG" data-aos="fade-down-left" data-aos-duration="500">
           </div>
           
         </div>
     
         <div class="row" id="gallery" >
           <div class="col-12 col-sm-6 col-lg-6">
-            <img class="w-100" src="./images/project3.PNG">
+            <img class="w-100" src="./images/project3.PNG"data-aos="fade-down-right" data-aos-duration="500" >
           </div>
           <div class="col-12 col-sm-6 col-lg-6">
-            <img class="w-100" src="./images/project4.PNG">
+            <img class="w-100" src="./images/project4.PNG" data-aos="fade-down-left" data-aos-duration="500">
           </div>
           
         </div>
 
         <div class="row" id="gallery" >
           <div class="col-12 col-sm-6 col-lg-6">
-            <img class="w-100" src="./images/howdareyou.PNG">
+            <img class="w-100" src="./images/howdareyou.PNG"data-aos="fade-down-right" data-aos-duration="500" >
           </div>
           <div class="col-12 col-sm-6 col-lg-6">
-            <img class="w-100 "src="./images/easyliving0202.png">
+            <img class="w-100 "src="./images/easyliving0202.png" data-aos="fade-down-left" data-aos-duration="500">
           </div>
           
         </div>  
 
         <div class="row" id="gallery" >
           <div class="col-12 col-sm-6 col-lg-6">
-            <img class="w-100" src="./images/yourwebdevsnip.PNG">
+            <img class="w-100" src="./images/yourwebdevsnip.PNG"data-aos="fade-down-right" data-aos-duration="500" >
           </div>
           <div class="col-12 col-sm-6 col-lg-6">
-            <img class="w-100" src="./images/ouncecountshome.PNG">
+            <img class="w-100" src="./images/ouncecountshome.PNG"data-aos="fade-down-left" data-aos-duration="500" >
           </div>
           
         </div>
@@ -363,12 +371,7 @@ drawer();
               </div>
               <input type="hidden" name="_next" value="./index.html" />
               <input type="text" name="_gotcha" style="display:none" />   
-              </form>
-  
-            
-   
-
-    
+              </form>  
     </div>
 
 
@@ -376,6 +379,8 @@ drawer();
       <div class="container-fluid">
         <span class="text-muted"> Made by Kris Arushanov Your Web Dev</span>
        
+     
+
       </div>
     </footer>
     <script type="text/javascript" src="script.js"></script>
