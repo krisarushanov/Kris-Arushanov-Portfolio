@@ -151,7 +151,7 @@ img { padding: 1%;
 
 .drawer {
   display: none;
-  color: #000;
+  color:white;
 }
 
 .drawer__header {
@@ -189,9 +189,8 @@ img { padding: 1%;
   overflow: auto;
   transition: transform 0.3s;
   will-change: transform;
- background-color: rgb(245, 187, 245);
-  background-size: 400% 400%;
-
+  background-image: url(./images/pawel-czerwinski-3WNqDzGK4Oo-unsplash.jpg);
+  background-size: cover;
 
   
 }
@@ -199,12 +198,12 @@ img { padding: 1%;
 
 
 .drawer__title {
- color: black;
+ color:white;
   padding-left: 3vw;
   padding-top: 2vw;
   padding-bottom: 1vw;
-  font-size: 4vw;
-  line-height: 4vw;
+  font-size: 5vw;
+  line-height: 5vw;
   font-family: 'Anton', sans-serif;
  
 
