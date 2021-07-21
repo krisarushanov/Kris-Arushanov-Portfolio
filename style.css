@@ -11,7 +11,6 @@ body {
   background-color:white;
   font-weight: 700;
   color: white;
- 
 }
 
 .navbar-brand {
@@ -53,7 +52,6 @@ i {
   object-fit: cover;
   width: 100vw;
   height: 75vh;
- 
 }
 
 @media screen and (max-width: 600px) {
@@ -87,7 +85,6 @@ h1 {
   margin-top: .83333vw;
   text-transform: uppercase;
   text-shadow: 0 0 3px #09ff00;
-  
 }
 
 h2 {
@@ -98,8 +95,6 @@ h2 {
   background: -webkit-linear-gradient(rgb(125, 233, 174), rgb(3, 148, 233));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-
 }
 
 #bioheadline {
@@ -145,21 +140,15 @@ img { padding: 1%;
    line-height: 4vh;
    font-weight: 700;
  }
-
-
-
-
 .drawer {
   display: none;
   color:white;
 }
 
 .drawer__header {
- 
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
 
 .drawer__close {
@@ -194,9 +183,6 @@ img { padding: 1%;
 
   
 }
-
-
-
 .drawer__title {
  color:white;
   padding-left: 3vw;
@@ -206,7 +192,6 @@ img { padding: 1%;
   line-height: 5vw;
   font-family: 'Anton', sans-serif;
  
-
 }
 .drawer__content {
   padding-right: 5%;
@@ -221,9 +206,6 @@ img { padding: 1%;
   font-size: 3vw;
   line-height: 3vw;
   font-family: 'Anton', sans-serif;
-  
- 
- 
 }
 
 .drawer.is-active {
@@ -257,7 +239,6 @@ img { padding: 1%;
   user-select: none;
 }
 
-
  .form-control {
   background-color:rgb(2, 18, 19);
    color:white;
@@ -277,7 +258,6 @@ img { padding: 1%;
   .aboutPageHeader {
     padding-top: 5%;
     padding-bottom: 2%;
-  
   }
 
   
