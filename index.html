@@ -51,85 +51,64 @@
       <div class="container-fluid">
       <h1  style="justify-content: center; color: white; padding-bottom: 2%; ">KRIS ARUSHANOV</h1>
       <h2  style="justify-content: center;  " > WEB DEVELOPMENT & DESIGN</h2> 
-      
-      
       <hr class="my-4">
-      
-      
     </div> 
   </div>
 
     <div class="container-fluid" >
-         <div class="container"   id="projectExOne" >
-          
-            </div>
-          </div>    
-         
+      <div class="container" id="projectExOne"></div>
+        </div>    
          <section class="drawer" id="drawer-name" data-drawer-target>
-          <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
-          <div class="drawer__wrapper">
-            <div class="drawer__header">
-              
-              <div class="drawer__title" >
+            <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+             <div class="drawer__wrapper">
+              <div class="drawer__header">
+               <div class="drawer__title" >
                 <h1  style="text-shadow: none;"  >NOT YOR AVERAGE DEV</h1>
-              </div>
-          
-              <button class="drawer__close"  data-drawer-close aria-label="Close Drawer"></button>
-            </div>
-            <div class="drawer__content" >
-              <div class="AboutMe" >
-              <div class="aboutPageHeader"> WELCOME TO THE WORLD OF KRIS</div>
-
-              <p text-align="center" style="font-family: 'Montserrat', sans-serif;">    
-                  Leave your shoes at the door and keep your mind open. I am results-driven web developer who transforms how users interact with data.
-                 I recently earned a certificate in Full Stack Web Development from the University of Washington Coding Boot Camp. I enjoy making the most 
-                 out of users experiences by <span style="text-decoration: underline;" > experimenting,</span><span style="text-decoration: underline;"> staying curious</span> and <span style="text-decoration: underline;">innovative thinking</span>
-                
-             </p>
-        
-            </div>
+                  </div>
+                <button class="drawer__close"  data-drawer-close aria-label="Close Drawer"></button>
+                  </div>
+              <div class="drawer__content" >
+                <div class="AboutMe" >
+                  <div class="aboutPageHeader"> WELCOME TO THE WORLD OF KRIS</div>
+                    <p text-align="center" style="font-family: 'Montserrat', sans-serif;">    
+                       Leave your shoes at the door and keep your mind open. I am results-driven web developer who transforms how users interact with data.
+                      I recently earned a certificate in Full Stack Web Development from the University of Washington Coding Boot Camp. I enjoy making the most 
+                      out of users experiences by <span style="text-decoration: underline;" > experimenting,</span><span style="text-decoration: underline;"> staying curious</span> and <span style="text-decoration: underline;">innovative thinking</span></p>
+                  </div>
             
-            <div>
-            <div  class="aboutPageHeader">
-               I'M A FRONT-END DEVELOPER, CAFFEINE ENTHUSIAST AND SEO STUDENT </div>
-
-              <p style="font-family: 'Montserrat', sans-serif;">  My passsion lies in designing and developing effective web pages that offer a seamless while memorable
-           
-                experience to the user. Your customer has made the journey to your site. Lets make the destination epic (kind of like Maui).</p>
-            </div>
+              <div>
+                <div  class="aboutPageHeader">
+                  I'M A FRONT-END DEVELOPER, CAFFEINE ENTHUSIAST AND SEO STUDENT </div>
+                    <p style="font-family: 'Montserrat', sans-serif;">  My passsion lies in designing and developing effective web pages that offer a seamless while memorable
+                      experience to the user. Your customer has made the journey to your site. Lets make the destination epic (kind of like Maui).</p>
+                    </div>
           
             <div  class="aboutPageHeader" >
                NO FRILLS JUST THRILLS
-
               <p style="font-family: 'Montserrat', sans-serif;" >
-                  Lets connect! I'm always working on a fun project on Github or building my network on LinkedIn.
-                 You can also find me getting washed up trying to surf. Do something awesome and don't forget the best surfer is the one having the most fun.  
+                Lets connect! I'm always working on a fun project on Github or building my network on LinkedIn.
+                You can also find me getting washed up trying to surf. Do something awesome and don't forget the best surfer is the one having the most fun.  
                </p>
-
-            </div>
+              </div>
             <div class="aboutPageHeader" >
                Technical Skills
               <p style="font-family: 'Montserrat', sans-serif;">
                 Languages: HTML5, CSS, Javascript, React, SQL, NoSQL, Liquid
                 Applications: Github, MongoDB, MySQL, Wordpress, Shopify
                 Tools: Google Cloud Platform, Node, Express, Bootstrap, jQuery, APIs, AJAX, Chrome developer tools
-                Concepts: SEO, Google Analytics
-              </p>
-  
+                Concepts: SEO, Google Analytics</p>
             </div>  
 
           <div class="aboutPageHeader">
              Strengths
             <p style="font-family: 'Montserrat', sans-serif;">
-              Communication, teamwork, experimentation and building projects from ideation to execution. <span style="text-decoration: underline;"> Passion for all things web with a curiosity to learn</span> and <span style="text-decoration:underline;"> a willingness to do things the right way.</span> 
-
-            </p>
-          </div>
+              Communication, teamwork, experimentation and building projects from ideation to execution. <span style="text-decoration: underline;"> Passion for all things web with a curiosity to learn</span> and <span style="text-decoration:underline;"> a willingness to do things the right way.</span> </p>
+            </div>
           </div>  
-          
-          </div>
-        </section>
-  <script>
+        </div>
+      </section>
+  
+<script>
 var drawer = function () {
 
 /**
@@ -152,7 +131,6 @@ if (!Element.prototype.closest) {
   };
 }
 
-
 //
 // Settings
 //
@@ -164,14 +142,10 @@ var settings = {
   selectorTarget: '[data-drawer-target]',
   selectorTrigger: '[data-drawer-trigger]',
   selectorClose: '[data-drawer-close]',
-
 };
-
-
 //
 // Methods
 //
-
 // Toggle accessibility
 var toggleccessibility = function (event) {
   if (event.getAttribute('aria-expanded') === 'true') {
@@ -266,11 +240,8 @@ var keydownHandler = function (event) {
         closeDrawer(drawers[i]);
       }
     }
-
   }
-
 };
-
 
 //
 // Inits & Event Listeners
@@ -278,12 +249,11 @@ var keydownHandler = function (event) {
 document.addEventListener('click', clickHandler, false);
 document.addEventListener('keydown', keydownHandler, false);
 
-
 };
 
 drawer();
 
-  </script>      
+</script>      
 
 <div class= "container" >  
     
@@ -330,7 +300,6 @@ drawer();
           <div class="col-12 col-sm-6 col-lg-6">
             <img class="w-100" src="./images/project4.PNG" data-aos="fade-down-left" data-aos-duration="500">
           </div>
-          
         </div>
 
         <div class="row" id="gallery" >
@@ -340,7 +309,6 @@ drawer();
           <div class="col-12 col-sm-6 col-lg-6">
             <img class="w-100 "src="./images/easyliving0202.png" data-aos="fade-down-left" data-aos-duration="500">
           </div>
-          
         </div>  
 
         <div class="row" id="gallery" >
@@ -350,11 +318,9 @@ drawer();
           <div class="col-12 col-sm-6 col-lg-6">
             <img class="w-100" src="./images/ouncecountshome.PNG"data-aos="fade-down-left" data-aos-duration="500" >
           </div>
-          
         </div>
 
         <div class= "container" id="contact"  >  
-    
           <div class="px-4 py-5 my-5 text-center">
             <img src="./images/message.png">
             <h1  style="justify-content: center; color: white; ">Contact</h1>
@@ -362,41 +328,36 @@ drawer();
             <p class="lead"> 
               kris.arushanov@gmail.com (206) 466-9040 </p>
             <div class="col-lg-6 mx-auto">
-             
               </div>
             </div>
           </div>
        
   
-            <form id="contactform" action="https://formspree.io/f/xdoyooyv" method="POST" target="_blank" >
+    <form id="contactform" action="https://formspree.io/f/xdoyooyv" method="POST" target="_blank" >
              
-                <div class="row">
-                  <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                  </div>
-                  <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
-                  </div>
-                </div>
-                <textarea  style= "margin-top: 5%;" class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+        <div class="col-sm-6 form-group">
+             <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
+              </div>
+            </div>
+              <textarea  style= "margin-top: 5%;" class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
                 <div class="row">
                   <div class="col-sm-12 form-group">
                     <button class="btn btn-custom pull-right" type="submit">Send</button>
                   </div>
-               
               </div>
               <input type="hidden" name="_next" value="./index.html" />
               <input type="text" name="_gotcha" style="display:none" />   
-              </form>  
+      </form>  
     </div>
 
 
     <footer class="footer mt-auto py-3 ">
       <div class="container-fluid">
         <span class="text-muted"> Made by Kris Arushanov Your Web Dev</span>
-       
-     
-
       </div>
     </footer>
     <script type="text/javascript" src="script.js"></script>
